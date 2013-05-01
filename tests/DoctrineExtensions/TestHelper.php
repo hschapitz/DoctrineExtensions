@@ -17,11 +17,11 @@ if (!file_exists($loaderfile)) {
 }
 require_once($loaderfile);
 
-$loader = new Doctrine\Common\ClassLoader("Doctrine", $GLOBALS['doctrine2-path']);
+$loader = new ClassLoader("Doctrine", $GLOBALS['doctrine2-path']);
 $loader->register();
 
-$loader = new Doctrine\Common\ClassLoader("DoctrineExtensions", __DIR__."/../../lib");
+$loader = new ClassLoader("DoctrineExtensions", __DIR__."/../../lib");
 $loader->register();
 
-$loader = new Doctrine\Common\ClassLoader("Entities", realpath(__DIR__."/.."));
+$loader = new ClassLoader("Entities", realpath(__DIR__."/.."));
 $loader->register();

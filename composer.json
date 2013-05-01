@@ -1,7 +1,10 @@
 {
-    "name": "beberlei/DoctrineExtensions",
+    "name": "agentor/DoctrineExtensions",
     "require": {
         "doctrine/orm": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
     },
     "autoload": {
         "psr-0": {"DoctrineExtensions" : "lib/"}
