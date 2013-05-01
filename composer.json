@@ -1,5 +1,5 @@
 {
-    "name": "agentor/DoctrineExtensions",
+    "name": "agentor/doctrine-extensions",
     "require": {
         "doctrine/orm": "*"
     },
