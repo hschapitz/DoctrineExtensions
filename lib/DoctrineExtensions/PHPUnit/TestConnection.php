@@ -141,7 +141,7 @@ class TestConnection implements \PHPUnit_Extensions_Database_DB_IDatabaseConnect
      */
     public function getTruncateCommand()
     {
-        throw new TestException('Not supported with this connection type');
+        return 'TRUNCATE';
     }
 
     /**
