@@ -13,7 +13,7 @@
 
 namespace DoctrineExtensions\PHPUnit;
 
-require_once "PHPUnit/Extensions/Database/ITester.php";
+#require_once "PHPUnit/Extensions/Database/ITester.php";
 
 use Doctrine\ORM\EntityManager;
 use PHPUnit_Extensions_Database_DB_IDatabaseConnection AS IDatabaseConnection;
