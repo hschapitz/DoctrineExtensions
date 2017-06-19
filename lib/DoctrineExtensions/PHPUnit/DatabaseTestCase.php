@@ -14,9 +14,9 @@
 namespace DoctrineExtensions\PHPUnit;
 use DoctrineExtensions\PHPUnit\Operations\Truncate;
 
-require_once "PHPUnit/Extensions/Database/TestCase.php";
-require_once 'PHPUnit/Extensions/Database/DataSet/QueryDataSet.php';
-require_once 'PHPUnit/Extensions/Database/DataSet/QueryTable.php';
+#require_once "PHPUnit/Extensions/Database/TestCase.php";
+#require_once 'PHPUnit/Extensions/Database/DataSet/QueryDataSet.php';
+#require_once 'PHPUnit/Extensions/Database/DataSet/QueryTable.php';
 
 abstract class DatabaseTestCase extends \PHPUnit_Extensions_Database_TestCase
 {
@@ -49,7 +49,7 @@ abstract class DatabaseTestCase extends \PHPUnit_Extensions_Database_TestCase
     protected function getSetUpOperation()
     {
         return new \PHPUnit_Extensions_Database_Operation_Composite(array(
-            new Truncate(),
+            new \PHPUnit_Extensions_Database_Operation_Truncate(),
             new \PHPUnit_Extensions_Database_Operation_Insert()
         ));
     }
